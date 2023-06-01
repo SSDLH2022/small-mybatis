@@ -31,8 +31,10 @@ public class ApiTest {
 
         userDao.toString();
 
-        String res = userDao.queryUserName("10001");
-        logger.info("测试结果：{}", res);
+        String res1 = userDao.queryUserName("10001");
+        String res2 = userDao.queryUserName("10001");
+        logger.info("测试结果1：{}", res1);
+        logger.info("测试结果2：{}", res2);
     }
 
 }
